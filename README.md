@@ -1,11 +1,11 @@
-# UiPath – Unattended Robot Automation with Orchestrator
+# UiPath - Unattended Robot Automation with Orchestrator
 
 This repository contains a **UiPath automation project** demonstrating how to run a workflow using an **Unattended Robot** connected through **UiPath Orchestrator**.  
 The project covers everything from workflow creation to publishing, robot setup, and job execution via Orchestrator.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 - **Built using**: UiPath Studio (Modern Design Experience)
 - **Goal**: Automate a workflow using an **Unattended Robot** managed entirely through **UiPath Orchestrator**
 - **Focus Areas**:
@@ -16,7 +16,7 @@ The project covers everything from workflow creation to publishing, robot setup,
 
 ---
 
-## 🧩 Technologies & Components Used
+## Technologies & Components Used
 - **UiPath Orchestrator**  
   For managing Machines, Robots, Assets, Jobs, and Triggers
 
@@ -34,37 +34,37 @@ The project covers everything from workflow creation to publishing, robot setup,
 
 ---
 
-## 📁 Project Files
+## Project Files
 - `Main.xaml` → Main workflow executed by the robot  
 - `project.json` → Project metadata & package dependencies  
 - Supporting Dependencies → Added via Manage Packages (UiPath.System.Activities, UiPath.UIAutomation.Activities, etc.)
 
 ---
 
-## 🔧 Workflow Logic
+## Workflow Logic
 
-### 1️⃣ **Workflow Execution**
+### 1 **Workflow Execution**
 This project contains a simple workflow that:
 - Performs automated steps without requiring human input  
 - Ensures compatibility with unattended execution (no Message Boxes/Input Dialogs)
 
-### 2️⃣ **Publish to Orchestrator**
+### 2️**Publish to Orchestrator**
 - Workflow is published directly from UiPath Studio  
 - Visible under **Orchestrator → Automations → Processes**
 
-### 3️⃣ **Unattended Robot Configuration**
+### 3️ **Unattended Robot Configuration**
 - Machine Template created in Orchestrator  
 - Machine Key added to UiPath Assistant  
 - Robot provisioned with valid Windows credentials  
 - Robot appears as **Connected (Licensed)** in Orchestrator
 
-### 4️⃣ **Triggering the Job**
+### 4️ **Triggering the Job**
 - Job can be started manually from Orchestrator  
 - Or set to run automatically using **Time Triggers**
 
 ---
 
-## 🏁 Execution Flow (Step-by-Step)
+## Execution Flow (Step-by-Step)
 
 1. Create UiPath process  
 2. Define Machine Template in Orchestrator  
@@ -77,7 +77,7 @@ This project contains a simple workflow that:
 
 ---
 
-## 📤 Output Example
+## Output Example
 After execution, Orchestrator logs display:
 
 - **Job Status**: Successful  
@@ -92,37 +92,6 @@ After execution, Orchestrator logs display:
 
 ---
 
-## 📸 Screenshots
-
-> *(Replace image links with your own Orchestrator screenshots)*
-
-<img width="3840" height="2160" alt="Orchestrator Dashboard" src="https://github.com/user-attachments/assets/example1" />
-<img width="3840" height="2160" alt="Machine Template Setup" src="https://github.com/user-attachments/assets/example2" />
-<img width="3840" height="2160" alt="Job Execution" src="https://github.com/user-attachments/assets/example3" />
+## Screenshots
 
 ---
-
-## 📝 Notes
-- Ensure Windows user credentials in Orchestrator match the actual machine  
-- Keep display unlocked or configure auto-login for VM unattended execution  
-- Use **Assets** for configuration values  
-- Avoid UI dialogs in unattended workflows
-
----
-
-## 📌 Requirements
-- UiPath Studio  
-- UiPath Assistant  
-- UiPath Orchestrator account  
-- Valid Machine + Robot provisioning  
-- Service-mode Robot installation  
-
----
-
-## 📄 License
-This project is open-source. Modify and use as required.
-
----
-
-### ⭐ If you found this helpful, give it a star on GitHub!
-
